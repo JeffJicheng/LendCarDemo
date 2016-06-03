@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:orientation="horizontal" 
+        >
+    <CheckBox 
+        android:id="@+id/shopping_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+	<ImageView 
+	    android:id="@+id/shopping_iv"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:src="@drawable/auti_a1"
+	    android:layout_marginLeft="1dp"
+	    />    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:layout_marginLeft="10dp"
+	    >
+	    <TextView 
+	        android:id="@+id/shopping_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:text="宝马X1 2014款sDriver18i手动型"
+			android:textStyle="bold"
+	        />
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:orientation="horizontal"
+		   
+		    >
+		    <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="价格: "		
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="10dp"        
+		        />
+		    <TextView 
+		        android:id="@+id/shopping_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		       	android:text="2300000"
+		       	android:textColor="#f00"
+		       	android:layout_marginTop="10dp"
+				android:layout_marginRight="10dp"
+		        />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="数量: "
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="10dp"
+		        />
+		    <TextView
+		        android:id="@+id/shopping_num" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2"
+		        android:layout_marginTop="10dp"
+		        />
+		</LinearLayout>	    
+	    
+	</LinearLayout>
+	</LinearLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/kk" />
+	
+</LinearLayout>

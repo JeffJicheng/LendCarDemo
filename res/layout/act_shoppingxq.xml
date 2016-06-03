@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/shoppingxq_rl1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:background="@color/orange"
+    >
+    <ImageView 
+        android:id="@+id/shoppingxq_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sel_register_back"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单详情"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        />
+	</RelativeLayout>
+    
+   <RelativeLayout 
+       android:id="@+id/shoppingxq_rl2"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="#a9b7b7"
+	        android:orientation="vertical"
+	        >
+        	<!-- 订单号 -->
+	       <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+        		>
+			       <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="订单号: "
+			           android:textColor="#f00"
+			           android:textSize="18sp"
+			           />
+			       <TextView 
+			           android:id="@+id/shoppingxq_dingdanhao"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:textColor="#f00"
+			           android:textSize="18sp"
+			           android:text="56235523232"
+			           />
+        	</LinearLayout>
+	         <!-- 需付款 -->
+			<LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+	        	>
+			       <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="需付款:￥ "
+			           android:textColor="#f00"
+			           android:textSize="18sp"
+			           />
+			       <TextView 
+			           android:id="@+id/shoppingxq_money"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:textColor="#f00"
+			           android:textSize="18sp"
+			           android:text="230000"
+			           />
+       		 </LinearLayout>
+      	
+	   </LinearLayout>
+       <Button 
+           android:id="@+id/shoppingxq_yes"
+           android:layout_width="120dp"
+           android:layout_height="fill_parent"
+           android:textColor="#fff"
+           android:text="确认付款"
+           android:textSize="18sp"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/sel_btn_yes"
+           />
+    </RelativeLayout>
+	<ListView 
+	    android:id="@+id/shoppingxq_lv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/shoppingxq_rl1"
+	    android:layout_above="@id/shoppingxq_rl2"
+	    android:divider="@drawable/kk"
+	    android:dividerHeight="1dp"
+	    ></ListView>
+</RelativeLayout>

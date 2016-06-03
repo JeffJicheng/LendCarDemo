@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+    <include layout="@layout/include_my_head"/>
+    <include layout="@layout/include_login_center"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    >
+	    <Button 
+	        android:id="@+id/login_btn"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="登录"
+		    android:padding="10dp"
+			android:background="@drawable/sel_login_btn"
+	    />
+	     <Button 
+	        android:id="@+id/login_register"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="注册"
+		    android:padding="10dp"
+			android:background="@drawable/sel_login_btn"
+			android:layout_marginTop="10dp"
+	    />
+	     <TextView 
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="如果您已经有至尚租赁账号，请直接登录"
+	         android:textColor="#44c9f8"
+	         android:gravity="center"
+	         android:layout_marginTop="10dp"
+	         />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/orange"
+    >
+    <ImageView 
+        android:id="@+id/register_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/sel_register_back"
+        android:layout_marginLeft="2dp"
+        android:clickable="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户注册"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+		android:textColor="#fff"
+        />
+    
+
+</RelativeLayout>

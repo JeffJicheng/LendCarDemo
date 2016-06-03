@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:text="订单号: "
+            />
+        <TextView 
+            android:id="@+id/item_finishdingdan_dingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D1243567888"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:text="下单时间: "
+            />
+        <TextView 
+            android:id="@+id/item_finishdingdan_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-4-25 3:20:01"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:text="订单状态:  "
+       		android:gravity="right"
+            />
+        <TextView 
+            android:id="@+id/item_finishdingdan_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已付款"
+            android:textStyle="bold"
+            />
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:text="金额： "
+       		android:gravity="right"
+       		android:layout_marginLeft="20dp"
+            />
+        <TextView 
+            android:id="@+id/item_finishdingdan_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥2300000"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

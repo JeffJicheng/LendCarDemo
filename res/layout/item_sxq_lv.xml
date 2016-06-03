@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:id="@+id/item_sxq_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/auti_a1"
+        />
+    <TextView 
+        android:id="@+id/item_sxq_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="宝马X1 2014款 sDriver18i 手动型"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	    	android:id="@+id/item_sxq_price"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="￥230000"
+	        android:textColor="#f00"
+	        android:gravity="center"
+	        />
+	    <TextView 
+	        android:id="@+id/item_sxq_numbers"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="X 1"
+	        android:textColor="#abb8b8"
+			android:gravity="center"
+			android:layout_marginTop="5dp"
+	        />
+	</LinearLayout>    
+</LinearLayout>

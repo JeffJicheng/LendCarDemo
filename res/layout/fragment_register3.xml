@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp"
+	    >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/ic_preference_first_normal"
+	        >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="输入密码:"
+				android:textSize="18sp"
+				android:layout_marginRight="20dp"
+	            />
+	        <EditText 
+	            android:id="@+id/register_pwd"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="请输入密码"
+	            android:padding="10dp"
+				android:background="#00000000"
+				android:password="true"
+				android:singleLine="true"
+				android:ellipsize="end"
+	            />
+	    </LinearLayout>
+	     <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/ic_preference_normal"
+	        >
+	         <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="确认密码:"
+				android:textSize="18sp"
+				android:layout_marginRight="20dp"
+	            />
+	        <EditText 
+	            android:id="@+id/register_repwd"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="请输入确认密码"
+	            android:padding="10dp"
+				android:background="#00000000"
+				android:password="true"
+				android:singleLine="true"
+				android:ellipsize="end"
+	            />
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/ic_preference_last_normal"
+	        android:padding="10dp"
+	        >
+	        <Button 
+	            android:id="@+id/register_finish"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/sel_login_btn"
+	            android:text="确认完成注册"
+	            android:textColor="#fff"
+	            android:padding="10dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            />
+	    </LinearLayout>   
+	    
+	    
+	</LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        >
+        <ImageView 
+            android:id="@+id/finishdingdan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_register_back"
+           	android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"            
+			android:text="已完成订单"
+			android:textColor="#fff"
+			android:textSize="20sp"
+            />
+        
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/finishdingdan_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/sel_finishdingdan_lv"
+        android:background="@drawable/shape_finishdingdan_lv_normal"
+        ></ListView>
+
+</LinearLayout>
